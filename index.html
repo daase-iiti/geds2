@@ -144,6 +144,14 @@
   .page.active { display: block; }
 
   /* ── HERO ── */
+  .hero-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 2px solid rgba(255,255,255,0.2);
+}
   .hero {
     min-height: 100vh;
     display: flex;
@@ -729,6 +737,7 @@
 <!-- HOME -->
 <div class="page active" id="page-home">
   <section class="hero">
+   <img src="images/logo.jpeg" alt="GEDS-II Logo" class="hero-logo">
     <p class="hero-eyebrow">International Conference on</p>
     <h1 class="hero-geds"> Galaxy Evolution and Dynamical Structures (GEDS)<span class="roman">-II</span></h1>
     <div class="hero-divider"></div>
