@@ -614,7 +614,14 @@
     gap: 1.5rem;
     margin-top: 1rem;
   }
-
+  
+  .member-grid-loc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
   .member-card {
     background: transparent !important;
     border: none !important;
@@ -706,6 +713,7 @@
 
   @media (max-width: 820px) {
     .member-grid { grid-template-columns: repeat(2, 1fr); }
+    .member-grid-loc { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
 </head>
@@ -908,7 +916,7 @@
 
       <!-- ── LOC ── -->
       <div class="committee-group-label" style="margin-top:3rem;">Local Organising Committee (LOC)</div>
-      <div class="member-grid">
+      <div class="member-grid-loc">
 
         <div class="member-card chair">
           <div class="member-photo-wrap">
