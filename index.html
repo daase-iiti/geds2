@@ -167,17 +167,25 @@
     background-position: center;
   }
 
+  .hero-logos-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem 0;
+  }
+
   /* Dark gradient overlay for readability */
-  .hero::before {
+.hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(
       to bottom,
-      rgba(4, 8, 18, 0.72) 0%,
-      rgba(4, 8, 18, 0.55) 40%,
-      rgba(4, 8, 18, 0.65) 70%,
-      rgba(4, 8, 18, 0.88) 100%
+      rgba(4, 8, 18, 0.45) 0%,
+      rgba(4, 8, 18, 0.30) 40%,
+      rgba(4, 8, 18, 0.40) 70%,
+      rgba(4, 8, 18, 0.65) 100%
     );
     z-index: 0;
   }
@@ -598,7 +606,17 @@
     nav { padding: 0 1.25rem; }
     .nav-links { display: none !important; flex-direction: column; position: fixed; top: 64px; left: 0; right: 0; background: rgba(6,10,20,0.98); padding: 0.5rem 0 1rem; border-bottom: 1px solid var(--glass-border); z-index: 99; }
     .nav-links.open { display: flex !important; }
-    .nav-links a { padding: 0.85rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; }
+    .nav-links a {
+    display: block;
+    padding: 0.5rem 0.9rem;
+    color: var(--dim-star);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
     .nav-hamburger { display: flex !important; }
     .committee-cols { grid-template-columns: 1fr; gap: 2rem; }
     .rationale-grid { grid-template-columns: 1fr; }
@@ -748,7 +766,10 @@
   <section class="hero">
     <p class="hero-eyebrow" style="color: var(--accent-gold); font-size: 1.5rem;">INTERNATIONAL CONFERENCE ON</p>
     <h1 class="hero-geds">Galaxy Evolution and Dynamical Structures (GEDS)-II</h1>
-    <img src="images/logo.jpeg" alt="GEDS-II Logo" class="hero-logo">
+    <div class="hero-logos-row">
+      <img src="images/iiti_logo.png" alt="IIT Indore Logo" class="hero-logo">
+      <img src="images/logo.jpeg" alt="GEDS-II Logo" class="hero-logo">
+    </div>
     <div class="hero-divider"></div>
     <div class="hero-meta">
       <div class="hero-meta-item">
