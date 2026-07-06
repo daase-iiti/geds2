@@ -595,13 +595,15 @@
 .date-left::after {
     content: '';
     position: absolute;
-    right: -5px; top: 50%;
-    transform: translateY(-50%);
-    width: 9px; height: 9px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     background: var(--accent-nebula);
     border: 2px solid var(--deep-space);
-  }
+}
   .date-right { padding: 1rem 0 1rem 1.5rem; font-size: 1.5rem; color: var(--dim-star); }
   .date-right strong { color: var(--starlight); display: block; margin-bottom: 0.15rem; }
   
